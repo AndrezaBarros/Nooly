@@ -2,6 +2,7 @@
 import { useEffect } from 'react'
 import { supabase } from '@/lib/supabaseClient'
 import Loading from '@/components/Loading'
+import UserTypeSelectionPage from '../userTypeSelection/page'
 
 export default function TestPage() {
   useEffect(() => {
@@ -17,7 +18,5 @@ export default function TestPage() {
     testConnection()
   }, [])
 
-  return <div>Teste Supabase 🔥 (veja console)
-    <Loading/>
-  </div>
+  return <UserTypeSelectionPage />
 }
