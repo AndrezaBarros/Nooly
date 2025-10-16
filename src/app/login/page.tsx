@@ -3,9 +3,9 @@ import { useState } from 'react'
 import { signIn } from '@/lib/auth'
 import Link from 'next/link'
 import Image from 'next/image'
-import { PasswordInput } from '../components/Input/PasswordInput'
-import { TextInput } from '../components/Input/TextInput'
-import { PrimaryButton } from '../components/Button/PrimaryButton'
+import { PasswordInput } from '../../components/Input/PasswordInput'
+import { TextInput } from '../../components/Input/TextInput'
+import { PrimaryButton } from '../../components/Button/PrimaryButton'
 
 export default function LoginPage() {
   const [email, setEmail] = useState('')

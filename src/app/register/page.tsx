@@ -3,9 +3,9 @@ import { useState } from 'react'
 import { signUp } from '@/lib/auth'
 import Link from 'next/link'
 import Image from 'next/image'
-import { PasswordInput } from '../components/Input/PasswordInput'
-import { TextInput } from '../components/Input/TextInput'
-import { SecondaryButton } from '../components/Button/SecondaryButton'
+import { PasswordInput } from '../../components/Input/PasswordInput'
+import { TextInput } from '../../components/Input/TextInput'
+import { SecondaryButton } from '../../components/Button/SecondaryButton'
 
 export default function RegisterPage() {
   const [email, setEmail] = useState('')
@@ -67,7 +67,7 @@ export default function RegisterPage() {
                 required
               />
               <p className="text-sm pl-1" style={{ color: '#657275' }}>
-                A senha deve conter pelo menos 8 caracteres.
+                A senha deve conter pelo menos 6 caracteres.
               </p>
 
               {/* Submit button - mobile-optimized touch target */}

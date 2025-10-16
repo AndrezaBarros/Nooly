@@ -1,7 +1,7 @@
 'use client'
 import { useEffect } from 'react'
 import { supabase } from '@/lib/supabaseClient'
-import Loading from '../components/Loading'
+import Loading from '@/components/Loading'
 
 export default function TestPage() {
   useEffect(() => {
@@ -18,5 +18,6 @@ export default function TestPage() {
   }, [])
 
   return <div>Teste Supabase 🔥 (veja console)
+    <Loading/>
   </div>
 }
